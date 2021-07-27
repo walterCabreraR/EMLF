@@ -1,0 +1,14 @@
+spring:  
+  application:
+    name: deneb-service
+  config:
+    import: optional:configserver:http://localhost:8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: 127.0.0.1

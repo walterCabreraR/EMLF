@@ -1,0 +1,42 @@
+2021-07-10 00:00:36.786  INFO 24584 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-10 00:00:43.555  INFO 5092 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-10 00:00:43.560  INFO 5092 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 5092 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-10 00:00:43.561  INFO 5092 --- [main] ms.wacr.com.ConfigServerApplication      : The following profiles are active: native
+2021-07-10 00:00:44.767  INFO 5092 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da07640a-646b-3f13-b919-333767576962
+2021-07-10 00:00:45.107  INFO 5092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-10 00:00:45.117  INFO 5092 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-10 00:00:45.118  INFO 5092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-10 00:00:45.118  INFO 5092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-10 00:00:45.223  INFO 5092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-10 00:00:45.223  INFO 5092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1616 ms
+2021-07-10 00:00:46.878  INFO 5092 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-10 00:00:46.932  INFO 5092 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-10 00:00:46.954  INFO 5092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-10 00:00:47.791  INFO 5092 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 5.474 seconds (JVM running for 6.89)
+2021-07-10 00:00:48.277  INFO 5092 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-10 00:00:48.277  INFO 5092 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-10 00:00:48.280  INFO 5092 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-07-10 00:09:22.262  INFO 5092 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-10 00:09:29.321  INFO 21428 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-10 00:09:29.335  INFO 21428 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 21428 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-10 00:09:29.336  INFO 21428 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-10 00:09:30.404  INFO 21428 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-10 00:09:30.745  INFO 21428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-10 00:09:30.756  INFO 21428 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-10 00:09:30.757  INFO 21428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-10 00:09:30.757  INFO 21428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-10 00:09:30.861  INFO 21428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-10 00:09:30.861  INFO 21428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1475 ms
+2021-07-10 00:09:32.540  INFO 21428 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-10 00:09:32.540  INFO 21428 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-10 00:09:33.037  INFO 21428 --- [RMI TCP Connection(3)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-10 00:09:33.074  INFO 21428 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 534 ms
+2021-07-10 00:09:33.141  INFO 21428 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-10 00:09:33.163  INFO 21428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-10 00:09:33.985  INFO 21428 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 5.906 seconds (JVM running for 7.444)
+2021-07-10 00:09:43.254  WARN 21428 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-10 00:09:43.280  INFO 21428 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\config.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-10 00:09:54.587  WARN 21428 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-10 00:11:56.218  WARN 21428 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-10 00:11:56.234  INFO 21428 --- [http-nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-10 23:44:02.381  WARN 21428 --- [RMI TCP Connection(840)-127.0.0.1] javax.management.remote.misc             : The server has decided to close this client connection.

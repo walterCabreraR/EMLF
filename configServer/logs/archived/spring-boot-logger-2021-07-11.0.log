@@ -1,0 +1,860 @@
+2021-07-11 00:46:32.162  INFO 21428 --- [RMI TCP Connection(1228)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-11 11:31:48.989  INFO 14896 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 14896 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-11 11:31:48.991  INFO 14896 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-11 11:31:49.223  INFO 14896 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-11 11:31:55.612  INFO 14896 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-11 11:32:00.997  INFO 14896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-11 11:32:01.288  INFO 14896 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-11 11:32:01.373  INFO 14896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-11 11:32:01.373  INFO 14896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-11 11:32:02.588  INFO 14896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-11 11:32:02.589  INFO 14896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13087 ms
+2021-07-11 11:32:15.825  INFO 14896 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-11 11:32:16.003  INFO 14896 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-11 11:32:16.217  INFO 14896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-11 11:32:17.049  INFO 14896 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 32.742 seconds (JVM running for 34.205)
+2021-07-11 11:32:48.414  INFO 14896 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-11 11:32:48.414  INFO 14896 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-11 11:32:48.415  INFO 14896 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-11 11:39:26.615  WARN 14896 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:39:26.737  INFO 14896 --- [http-nio-8888-exec-1] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:42:31.991  INFO 14896 --- [http-nio-8888-exec-1] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:42:32.004  WARN 14896 --- [http-nio-8888-exec-1] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@7c05882f uris = array<String>['http://localhost:8888'], optional = true, profiles = list['master']]): I/O error on GET request for "http://localhost:8888/microservice-one/master": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+2021-07-11 11:42:32.008  INFO 14896 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:42:32.041  WARN 14896 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:42:32.062  INFO 14896 --- [http-nio-8888-exec-7] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:43:07.979  INFO 14896 --- [RMI TCP Connection(25)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-11 11:43:12.949  INFO 14896 --- [http-nio-8888-exec-7] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:43:12.950  WARN 14896 --- [http-nio-8888-exec-7] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@65c848dc uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/microservice-one/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-07-11 11:43:12.954  INFO 14896 --- [http-nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:12.992 ERROR 14896 --- [http-nio-8888-exec-7] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:12.993  WARN 14896 --- [http-nio-8888-exec-7] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Failed to record timer metrics
+
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at io.micrometer.core.instrument.ImmutableTag.<init>(ImmutableTag.java:35)
+	at io.micrometer.core.instrument.Tag.of(Tag.java:29)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcTags.method(WebMvcTags.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.DefaultWebMvcTagsProvider.getTags(DefaultWebMvcTagsProvider.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.getTimer(WebMvcMetricsFilter.java:161)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.lambda$record$0(WebMvcMetricsFilter.java:139)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.record(WebMvcMetricsFilter.java:138)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:13.012  WARN 14896 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:43:13.028  INFO 14896 --- [http-nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:13.030 ERROR 14896 --- [http-nio-8888-exec-6] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:13.031  WARN 14896 --- [http-nio-8888-exec-6] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Failed to record timer metrics
+
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at io.micrometer.core.instrument.ImmutableTag.<init>(ImmutableTag.java:35)
+	at io.micrometer.core.instrument.Tag.of(Tag.java:29)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcTags.method(WebMvcTags.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.DefaultWebMvcTagsProvider.getTags(DefaultWebMvcTagsProvider.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.getTimer(WebMvcMetricsFilter.java:161)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.lambda$record$0(WebMvcMetricsFilter.java:139)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.record(WebMvcMetricsFilter.java:138)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:13.061  WARN 14896 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:43:13.077  INFO 14896 --- [http-nio-8888-exec-5] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:43:15.093  INFO 14896 --- [http-nio-8888-exec-5] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:43:15.093  WARN 14896 --- [http-nio-8888-exec-5] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@43f8c0b9 uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/microservice-one/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-07-11 11:43:15.095  INFO 14896 --- [http-nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:15.096 ERROR 14896 --- [http-nio-8888-exec-5] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:15.097  WARN 14896 --- [http-nio-8888-exec-5] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Failed to record timer metrics
+
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at io.micrometer.core.instrument.ImmutableTag.<init>(ImmutableTag.java:35)
+	at io.micrometer.core.instrument.Tag.of(Tag.java:29)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcTags.method(WebMvcTags.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.DefaultWebMvcTagsProvider.getTags(DefaultWebMvcTagsProvider.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.getTimer(WebMvcMetricsFilter.java:161)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.lambda$record$0(WebMvcMetricsFilter.java:139)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.record(WebMvcMetricsFilter.java:138)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:15.125  WARN 14896 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:43:15.138  INFO 14896 --- [http-nio-8888-exec-4] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:43:17.158  INFO 14896 --- [http-nio-8888-exec-4] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:43:17.159  WARN 14896 --- [http-nio-8888-exec-4] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@63909fb5 uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/microservice-one/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-07-11 11:43:17.164  INFO 14896 --- [http-nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:17.166 ERROR 14896 --- [http-nio-8888-exec-4] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:17.168  WARN 14896 --- [http-nio-8888-exec-4] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Failed to record timer metrics
+
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at io.micrometer.core.instrument.ImmutableTag.<init>(ImmutableTag.java:35)
+	at io.micrometer.core.instrument.Tag.of(Tag.java:29)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcTags.method(WebMvcTags.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.DefaultWebMvcTagsProvider.getTags(DefaultWebMvcTagsProvider.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.getTimer(WebMvcMetricsFilter.java:161)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.lambda$record$0(WebMvcMetricsFilter.java:139)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.record(WebMvcMetricsFilter.java:138)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:17.202  WARN 14896 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:43:17.222  INFO 14896 --- [http-nio-8888-exec-2] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:43:19.239  INFO 14896 --- [http-nio-8888-exec-2] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:43:19.239  WARN 14896 --- [http-nio-8888-exec-2] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@74fb3b83 uris = array<String>['http://localhost:8888'], optional = true, profiles = list['master']]): I/O error on GET request for "http://localhost:8888/microservice-one/master": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-07-11 11:43:19.242  INFO 14896 --- [http-nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:19.243 ERROR 14896 --- [http-nio-8888-exec-2] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:19.243  WARN 14896 --- [http-nio-8888-exec-2] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Failed to record timer metrics
+
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at io.micrometer.core.instrument.ImmutableTag.<init>(ImmutableTag.java:35)
+	at io.micrometer.core.instrument.Tag.of(Tag.java:29)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcTags.method(WebMvcTags.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.DefaultWebMvcTagsProvider.getTags(DefaultWebMvcTagsProvider.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.getTimer(WebMvcMetricsFilter.java:161)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.lambda$record$0(WebMvcMetricsFilter.java:139)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.record(WebMvcMetricsFilter.java:138)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:19.273  WARN 14896 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:43:19.284  INFO 14896 --- [http-nio-8888-exec-9] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:19.285 ERROR 14896 --- [http-nio-8888-exec-9] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:19.286  WARN 14896 --- [http-nio-8888-exec-9] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Failed to record timer metrics
+
+java.lang.NullPointerException: null
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at io.micrometer.core.instrument.ImmutableTag.<init>(ImmutableTag.java:35)
+	at io.micrometer.core.instrument.Tag.of(Tag.java:29)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcTags.method(WebMvcTags.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.DefaultWebMvcTagsProvider.getTags(DefaultWebMvcTagsProvider.java:74)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.getTimer(WebMvcMetricsFilter.java:161)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.lambda$record$0(WebMvcMetricsFilter.java:139)
+	at org.springframework.boot.actuate.metrics.AutoTimer.apply(AutoTimer.java:109)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.record(WebMvcMetricsFilter.java:138)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:43:19.313  WARN 14896 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:43:19.327  INFO 14896 --- [http-nio-8888-exec-8] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:43:21.343  INFO 14896 --- [http-nio-8888-exec-8] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:43:21.344  WARN 14896 --- [http-nio-8888-exec-8] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@1cbac7e1 uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/microservice-one/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-07-11 11:43:21.348  INFO 14896 --- [http-nio-8888-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:43:21.349 ERROR 14896 --- [http-nio-8888-exec-8] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.NullPointerException: null
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.stopLongTaskTimers(LongTaskTimingHandlerInterceptor.java:133)
+	at org.springframework.boot.actuate.metrics.web.servlet.LongTaskTimingHandlerInterceptor.afterCompletion(LongTaskTimingHandlerInterceptor.java:83)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:178)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1450)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1083)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-11 11:44:00.516  INFO 24424 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-11 11:44:00.526  INFO 24424 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 24424 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-11 11:44:00.527  INFO 24424 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-11 11:44:01.668  INFO 24424 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-11 11:44:02.011  INFO 24424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-11 11:44:02.022  INFO 24424 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-11 11:44:02.022  INFO 24424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-11 11:44:02.022  INFO 24424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-11 11:44:02.130  INFO 24424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-11 11:44:02.130  INFO 24424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1560 ms
+2021-07-11 11:44:04.201  INFO 24424 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-11 11:44:04.271  INFO 24424 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-11 11:44:04.388  INFO 24424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-11 11:44:05.255  INFO 24424 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 6.066 seconds (JVM running for 7.599)
+2021-07-11 11:44:05.467  INFO 24424 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-11 11:44:05.467  INFO 24424 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-11 11:44:05.467  INFO 24424 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-07-11 11:44:13.771  WARN 24424 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:44:13.796  INFO 24424 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:44:26.296  WARN 24424 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:44:26.336  INFO 24424 --- [http-nio-8888-exec-2] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-07-11 11:47:31.401  INFO 24424 --- [http-nio-8888-exec-2] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-07-11 11:47:31.408  WARN 24424 --- [http-nio-8888-exec-2] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@7a3a89e1 uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/microservice-one/default": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+2021-07-11 11:47:31.411  INFO 24424 --- [http-nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:47:31.427  INFO 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 11:47:31.474  WARN 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:47:31.478  WARN 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 11:47:31.489  WARN 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 11:47:31.503  INFO 24424 --- [http-nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:47:31.515  INFO 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 11:47:31.536  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:47:31.541  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 11:47:31.544  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 11:47:31.553  INFO 24424 --- [http-nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:47:31.562  INFO 24424 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 11:47:31.590  WARN 24424 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:47:31.594  WARN 24424 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 11:47:31.597  WARN 24424 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 11:47:31.606  INFO 24424 --- [http-nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:47:31.617  INFO 24424 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 11:47:31.638  WARN 24424 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:47:31.642  WARN 24424 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 11:47:31.644  WARN 24424 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 11:47:31.652  INFO 24424 --- [http-nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:54:46.687  INFO 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 11:54:46.710  WARN 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:54:46.713  WARN 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 11:54:46.715  WARN 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 11:54:46.722  INFO 24424 --- [http-nio-8888-exec-9] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 11:55:36.118  INFO 24424 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 11:55:36.139  WARN 24424 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 11:55:36.143  WARN 24424 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 11:55:36.145  WARN 24424 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 11:55:36.153  INFO 24424 --- [http-nio-8888-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 12:06:30.443  INFO 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 12:06:30.466  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 12:06:30.469  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 12:06:30.471  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 12:06:51.494  INFO 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 12:06:51.516  WARN 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 12:06:51.519  WARN 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 12:06:51.521  WARN 24424 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 12:06:51.528  INFO 24424 --- [http-nio-8888-exec-9] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 12:07:03.137  INFO 24424 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 12:07:03.157  WARN 24424 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 12:07:03.160  WARN 24424 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 12:07:03.162  WARN 24424 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 12:07:03.170  INFO 24424 --- [http-nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 12:33:17.084  INFO 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 12:33:17.106  WARN 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 12:33:17.118  WARN 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 12:33:17.120  WARN 24424 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 12:33:17.218  INFO 24424 --- [http-nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 12:33:55.967  INFO 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 12:33:55.987  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 12:33:55.991  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 12:33:55.994  WARN 24424 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 12:33:56.003  INFO 24424 --- [http-nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 21:31:55.089  INFO 25320 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 25320 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-11 21:31:55.117  INFO 25320 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-11 21:31:55.125  INFO 25320 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-11 21:31:57.935  INFO 25320 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-11 21:31:58.611  INFO 25320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-11 21:31:58.632  INFO 25320 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:31:58.633  INFO 25320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-11 21:31:58.634  INFO 25320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-11 21:31:58.785  INFO 25320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-11 21:31:58.785  INFO 25320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3591 ms
+2021-07-11 21:32:01.337  INFO 25320 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-11 21:32:01.390  INFO 25320 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:32:01.430  WARN 25320 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
+2021-07-11 21:32:01.436  INFO 25320 --- [main] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:32:01.436  INFO 25320 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-11 21:32:01.444  INFO 25320 --- [main] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:32:01.445  INFO 25320 --- [main] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:32:01.458  INFO 25320 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-11 21:32:01.474 ERROR 25320 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+
+2021-07-11 21:32:15.161  INFO 24424 --- [RMI TCP Connection(564)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-11 21:32:35.443  INFO 12692 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-11 21:32:35.454  INFO 12692 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 12692 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-11 21:32:35.455  INFO 12692 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-11 21:32:36.487  INFO 12692 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-11 21:32:36.851  INFO 12692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-11 21:32:36.861  INFO 12692 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:32:36.862  INFO 12692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-11 21:32:36.862  INFO 12692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-11 21:32:36.972  INFO 12692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-11 21:32:36.972  INFO 12692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1475 ms
+2021-07-11 21:32:38.663  INFO 12692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-11 21:32:38.719  INFO 12692 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-11 21:32:38.866  INFO 12692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-11 21:32:39.700  INFO 12692 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 5.486 seconds (JVM running for 7.007)
+2021-07-11 21:32:40.221  INFO 12692 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-11 21:32:40.222  INFO 12692 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-11 21:32:40.223  INFO 12692 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-11 21:45:51.692  INFO 12692 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 21:45:51.797  WARN 12692 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 21:45:51.803  WARN 12692 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 21:45:51.813  WARN 12692 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 21:45:51.836  INFO 12692 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 22:36:32.535  INFO 12692 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 22:36:32.557  WARN 12692 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 22:36:32.561  WARN 12692 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 22:36:32.563  WARN 12692 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 22:36:32.660  INFO 12692 --- [http-nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 22:39:32.318  INFO 12692 --- [RMI TCP Connection(77)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-11 22:39:41.533  INFO 15016 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 15016 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-11 22:39:41.537  INFO 15016 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-11 22:39:41.566  INFO 15016 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-11 22:39:43.576  INFO 15016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-11 22:39:44.141  INFO 15016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-11 22:39:44.187  INFO 15016 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-11 22:39:44.187  INFO 15016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-11 22:39:44.188  INFO 15016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-11 22:39:44.321  INFO 15016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-11 22:39:44.322  INFO 15016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2676 ms
+2021-07-11 22:39:45.744  INFO 15016 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-11 22:39:45.745  INFO 15016 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-11 22:39:46.327  INFO 15016 --- [RMI TCP Connection(1)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-11 22:39:46.334  INFO 15016 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 589 ms
+2021-07-11 22:39:46.513  INFO 15016 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-11 22:39:46.578  INFO 15016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-11 22:39:47.403  INFO 15016 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 7.404 seconds (JVM running for 9.298)
+2021-07-11 22:40:44.630  WARN 15016 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 22:40:44.660  INFO 15016 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 22:42:24.357  WARN 15016 --- [http-nio-8888-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 22:42:24.369  INFO 15016 --- [http-nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.yml]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 22:48:07.492  INFO 15016 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-11 22:48:24.881  INFO 17104 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-07-11 22:48:24.893  INFO 17104 --- [main] ms.wacr.com.ConfigServerApplication      : Starting ConfigServerApplication using Java 1.8.0_292 on LIM-3LPR8S2 with PID 17104 (C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer\target\classes started by wcabrerr in C:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\configServer)
+2021-07-11 22:48:24.894  INFO 17104 --- [main] ms.wacr.com.ConfigServerApplication      : No active profile set, falling back to default profiles: default
+2021-07-11 22:48:25.961  INFO 17104 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b22bfeb-7283-32ef-9151-a190e79c3b59
+2021-07-11 22:48:26.306  INFO 17104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-07-11 22:48:26.316  INFO 17104 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-11 22:48:26.317  INFO 17104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-11 22:48:26.317  INFO 17104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-11 22:48:26.420  INFO 17104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-11 22:48:26.421  INFO 17104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2021-07-11 22:48:28.090  INFO 17104 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-11 22:48:28.140  INFO 17104 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2021-07-11 22:48:28.164  INFO 17104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-11 22:48:29.008  INFO 17104 --- [main] ms.wacr.com.ConfigServerApplication      : Started ConfigServerApplication in 5.381 seconds (JVM running for 6.804)
+2021-07-11 22:48:29.269  INFO 17104 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-11 22:48:29.270  INFO 17104 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-11 22:48:29.271  INFO 17104 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-11 22:48:43.120  WARN 17104 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 22:48:43.146  INFO 17104 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 22:49:10.466  WARN 17104 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 22:49:10.480  INFO 17104 --- [http-nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\microservice-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 22:49:16.290  WARN 17104 --- [http-nio-8888-exec-3] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 22:49:16.301  INFO 17104 --- [http-nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:01:45.354  INFO 17104 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:01:45.373  WARN 17104 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:01:45.378  WARN 17104 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:01:45.387  WARN 17104 --- [http-nio-8888-exec-7] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:01:45.395  INFO 17104 --- [http-nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:06:22.793  INFO 17104 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:06:22.812  WARN 17104 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:06:22.816  WARN 17104 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:06:22.818  WARN 17104 --- [http-nio-8888-exec-9] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:06:22.825  INFO 17104 --- [http-nio-8888-exec-9] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:07:25.603  INFO 17104 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:07:25.622  WARN 17104 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:07:25.626  WARN 17104 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:07:25.628  WARN 17104 --- [http-nio-8888-exec-2] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:07:25.636  INFO 17104 --- [http-nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:27:40.310  INFO 17104 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:27:40.329  WARN 17104 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:27:40.333  WARN 17104 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:27:40.335  WARN 17104 --- [http-nio-8888-exec-5] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:27:40.343  INFO 17104 --- [http-nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:29:45.059  INFO 17104 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:29:45.079  WARN 17104 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:29:45.082  WARN 17104 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:29:45.084  WARN 17104 --- [http-nio-8888-exec-6] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:29:45.092  INFO 17104 --- [http-nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:31:16.138  INFO 17104 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:31:16.157  WARN 17104 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:31:16.161  WARN 17104 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:31:16.162  WARN 17104 --- [http-nio-8888-exec-8] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:31:16.169  INFO 17104 --- [http-nio-8888-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'
+2021-07-11 23:40:20.298  INFO 17104 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Cannot pull from remote null, the working tree is not clean.
+2021-07-11 23:40:20.320  WARN 17104 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not merge remote for master remote: null
+2021-07-11 23:40:20.326  WARN 17104 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2021-07-11 23:40:22.296  WARN 17104 --- [http-nio-8888-exec-1] .c.s.e.MultipleJGitEnvironmentRepository : Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2021-07-11 23:40:22.499  INFO 17104 --- [http-nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [c:\Users\wcabrerr\WorkSpace\Microservices\enmilocalfunciona\ConfigServeRepo\service-one.properties]' via location 'file:/c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo/'

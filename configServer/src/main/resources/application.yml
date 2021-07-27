@@ -1,0 +1,12 @@
+server:  
+  port: 8888
+spring:  
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///c:/Users/wcabrerr/WorkSpace/Microservices/enmilocalfunciona/ConfigServeRepo          
+logging:  
+  file: logs/${spring.application.name}.log
